@@ -1,21 +1,28 @@
-// Arduino_Projects
+# Arduino Uno 16x2 LCD Display Project
 
-#include <LiquidCrystal.h>
+Successfully connected an Arduino Uno with a 16x2 LCD display using Arduino IDE and displayed custom text on the screen.  
 
-// RS, E, D4, D5, D6, D7
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+This project demonstrates:
+- LCD interfacing with Arduino Uno
+- Basic Arduino programming
+- Text display on a 16x2 LCD
+- Hardware and software integration
 
-void setup() {
-  lcd.begin(16, 2);
+## Components Used
+- Arduino Uno R3
+- 16x2 LCD Display
+- Jumper Wires
+- USB Cable
+- Breadboard
 
-  // First line
-  lcd.setCursor(0, 0);
-  lcd.print("Luna");
+## Features
+✔ Simple and beginner-friendly  
+✔ Direct LCD connection with Arduino  
+✔ Custom text display  
+✔ Easy to understand code  
 
-  // Second line
-  lcd.setCursor(0, 1);
-  lcd.print("Irinjalakuda");
-}
-
-void loop() {
-}
+## Output
+The LCD successfully displays messages such as:
+```text
+Hello World
+Arduino Uno
